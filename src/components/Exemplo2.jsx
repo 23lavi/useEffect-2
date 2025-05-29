@@ -24,19 +24,24 @@ export function Exemplo2() {
 
     return (
         <section>
-            <h2>busca cep</h2>
+            <h2>Ex. 2: Buscar endereços</h2>
 
-            <input type="number" placeholder="Digite seu CEP" onChange={(event) => setCep(event.target.value)}/>
+            <input type="number" placeholder="Digite seu CEP" onChange={(input) => setCep(input.target.value)}/>
 
             <div>
                 {cep.length === 8 && 
-                <p>
-                    {logradouro}, 
-                    {bairro}, 
-                    {cidade}, 
-                    {estado} - {uf}
-                </p>}
+                <>
+                <h3>Informações sobre o cep:</h3>
+                <ul>
+                    <li>{logradouro}</li>
+                    <li>{bairro}</li>
+                    <li>{cidade}</li>
+                    <li>{estado} - {uf}</li>
+                </ul>
+                </>
+}
             </div>
+                
         </section>
     )
 }
