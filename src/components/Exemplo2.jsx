@@ -29,7 +29,13 @@ export function Exemplo2() {
             <input type="number" placeholder="Digite seu CEP" onChange={(event) => setCep(event.target.value)}/>
 
             <div>
-                {cep.length === 8 && <p>{logradouro}, {bairro}, {cidade}, {estado} - {uf}</p>}
+                {cep.length === 8 && 
+                <p>
+                    {logradouro}, 
+                    {bairro}, 
+                    {cidade}, 
+                    {estado} - {uf}
+                </p>}
             </div>
         </section>
     )
