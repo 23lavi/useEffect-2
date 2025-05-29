@@ -12,8 +12,8 @@ export function Exemplo1(){
             <h2>Ex. 1: utilizações de useEffect</h2>
             <p>O useEffect tem duas utilidades principais:</p>
             <ol>
-                <li>Executar alguma função ou algum bloco de código que a pogina for carregar </li>
-                <li>Monitorar a mudança de um estado para executar algum bloco de código ou função</li>
+                <li>Executar alguma função ou algum bloco de código que a página for carregar; </li>
+                <li>Monitorar a mudança de um estado para executar algum bloco de código ou função;</li>
             </ol>
 
             <div>
